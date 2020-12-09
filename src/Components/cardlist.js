@@ -1,10 +1,9 @@
 import Card from './card';
 
 function Cardlist({robots}) {
-  if(robots.length == 0) {
-    return <h1 className='mt5 white'>Loading...</h1>
-  }
-  return (
+  return !robots.length ? 
+    <h1 className='mt5 white'>Loading...</h1>:
+  (
     <div>
       {
         robots.map((robot, i) => {

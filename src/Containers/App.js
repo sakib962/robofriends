@@ -1,9 +1,9 @@
-import Searchbox from './searchbox'
-import Cardlist from './cardlist';
+import Searchbox from '../Components/searchbox'
+import Cardlist from '../Components/cardlist';
 import { Component } from 'react';
-import Scroll from './scroll';
+import Scroll from '../Components/scroll';
 import './App.css';
-import {robots} from './robots'
+import {robots} from '../robots'
 
 class App extends Component {
   constructor() {
@@ -37,6 +37,7 @@ class App extends Component {
     const filterRobots = this.state.robots.filter(robot => {
       return robot.name.toLowerCase().includes(this.state.searchfild.toLowerCase())
     })
+    
     return(
       <div className='tc'>
         <div className="pa3">
