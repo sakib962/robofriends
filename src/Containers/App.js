@@ -7,16 +7,15 @@ import {robots} from '../robots'
 
 class App extends Component {
   constructor() {
-    console.log('constructor')
+    console.log('tes')
     super()
     this.state = {
       robots: [],
-      searchfild: ''
+      searchfild: '' 
     }
   }
 
   componentDidMount() {
-    console.log('mount');
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(respons => respons.json())
     .then(users => this.setState({robots: users}))
