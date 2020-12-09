@@ -2,7 +2,7 @@ import Card from './card';
 
 function Cardlist({robots}) {
   return !robots.length ? 
-    <h1 className='mt5 white'>Loading...</h1>:
+    <h1 className='mt5 white'>Not found!</h1>:
   (
     <div>
       {

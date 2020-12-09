@@ -39,7 +39,7 @@ class App extends Component {
     })
 
     return !robots.length? 
-      <h1 className="tc mt5 white">LOOOOOOOOding</h1> :
+      <h1 className="tc mt5 white">Loading...</h1> :
       (
         <div className='tc'>
           <div className="pa3">
