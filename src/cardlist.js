@@ -1,9 +1,9 @@
 import Card from './card';
 
 function Cardlist({robots}) {
-  console.log(robots)
+  alert(robots)
   return robots.length ? 
-    <h1 className='mt5 white'>Not found!</h1>:
+    <h1 className='red'>Not found!</h1>:
   (
     <div>
       {
