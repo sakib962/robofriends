@@ -1,9 +1,10 @@
-function Searchbox() {
+function Searchbox(props) {
   return(
     <input 
-      className="bg-lightest-blue bw0 pa2 br2"
+      className="b--green bg-lightest-blue ba pa3"
       type="text"
       placeholder="Search Robots"
+      onChange={props.onSearch}
     />
   )
 }
