@@ -41,9 +41,9 @@ class App extends Component {
     return !robots.length? 
       <h1 className="tc mt5 white">Loading...</h1> :
       (
-        <div className='tc'>
-          <div className="pa3">
-            <h1 className="f1 logo">Robofriends</h1>
+        <div className='container tc'>
+          <div className="header pa1 flex">
+            <h1 className="f1 logo dib">Robofriends</h1>
             <Searchbox onSearch={this.onsearchChange}/>
           </div>
           <Scroll>

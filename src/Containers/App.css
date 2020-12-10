@@ -7,6 +7,17 @@
 .logo {
   font-family: "Fixedsys Excelsior 3.01";
   color: rgba(0, 0, 0, 0.842);
-  font-size: 10rem;
-  margin: 20px;
+  margin: 0;
+}
+.header {
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+  }
 }
