@@ -7,7 +7,6 @@ function Card({id, name, email}) {
       <div className="tc">
         <h2>{name}</h2>
         <p>{email}</p>
-        <p>ID No: {id}</p>
       </div>
     </div>
   )
